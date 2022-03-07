@@ -1,0 +1,26 @@
+package com.day2.org;
+
+public class Mark {
+	public static void main(String[] args) {
+		System.out.println("Enter the m1:");
+		int m1 = sc.nextInt();
+		System.out.println("Empid is:"+m1);
+		
+		System.out.println("Enter the m2:");
+		int m2 = sc.nextInt();
+		System.out.println("Empid is:"+m2);
+		
+		System.out.println("Enter the m3:");
+		int m3 = sc.nextInt();
+		System.out.println("Empid is:"+m3);
+		
+		System.out.println("Enter the m4:");
+		int m4 = sc.nextInt();
+		System.out.println("Empid is:"+m4);
+		
+		System.out.println("Enter the m5:");
+		int m5 = sc.nextInt();
+		System.out.println("Empid is:"+m5);
+	}
+
+}

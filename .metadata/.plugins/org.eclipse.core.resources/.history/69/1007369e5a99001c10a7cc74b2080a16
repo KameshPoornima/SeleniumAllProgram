@@ -1,0 +1,38 @@
+package com.Stepdefinition.adactin;
+
+import org.com.cucumber.Baseclass;
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.support.FindBy;
+
+import com.Runnerclass.adactin.Runnerclass;
+
+import io.cucumber.java.en.*;
+
+public class stepdefinition {
+
+	@Given("user on the Login Page")
+	public void user_on_the_login_page() {
+	    // Write code here that turns the phrase above into concrete actions
+	    throw new io.cucumber.java.PendingException();
+	}
+	@When("user enters {string} with {string}")
+	public void user_enters_with(String string, String string2) {
+	    // Write code here that turns the phrase above into concrete actions
+	    throw new io.cucumber.java.PendingException();
+	}
+	@When("user click {string} button")
+	public void user_click_button(String string) {
+	    // Write code here that turns the phrase above into concrete actions
+	    throw new io.cucumber.java.PendingException();
+	}
+	@Then("user should see {string}")
+	public void user_should_see(String string) {
+	    // Write code here that turns the phrase above into concrete actions
+	    throw new io.cucumber.java.PendingException();
+	}
+
+
+
+
+		}

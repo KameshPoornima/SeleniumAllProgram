@@ -1,0 +1,9 @@
+Feature: Adactin Hotal Booking
+
+Scenario: Adactin Hotal Login Functionality
+Given Open the URL
+When User Enters on "Kameshpoorni" in username field
+When User Enters on "1B958G" in password field
+And Click on Login button
+Then Verifies the login functionality
+

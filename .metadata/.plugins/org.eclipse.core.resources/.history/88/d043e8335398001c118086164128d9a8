@@ -1,0 +1,23 @@
+package com.Day6.org;
+
+import java.awt.AWTException;
+import java.util.concurrent.TimeUnit;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.firefox.FirefoxDriver;
+
+public class fLIPKART {
+	 public static void main(String[] args) {
+				System.getProperty("webdriver.gecko.driver","D:\\Selenium\\Prog\\SeleniumProject\\Driver\\geckodriver.exe");
+				WebDriver driver = new FirefoxDriver();
+				driver.manage().deleteAllCookies();
+				driver.get("https://www.flipkart.com/ ");
+				driver.manage().window().maximize();
+				driver.manage().timeouts().implicitlyWait(60,TimeUnit.SECONDS);
+				
+				driver.findElement(By.xpath("//button[@class=\"_2KpZ6l _2doB4z\"]")).click();
+			
+	}
+
+}

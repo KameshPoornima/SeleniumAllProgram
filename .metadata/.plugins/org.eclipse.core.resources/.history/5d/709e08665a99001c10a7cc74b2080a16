@@ -1,0 +1,14 @@
+package com.Stepdefinition.adactin;
+
+import org.com.cucumber.Baseclass;
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.support.FindBy;
+
+import com.Runnerclass.adactin.Runnerclass;
+
+import io.cucumber.java.en.*;
+
+public class stepdefinition extends Runnerclass{
+
+		}

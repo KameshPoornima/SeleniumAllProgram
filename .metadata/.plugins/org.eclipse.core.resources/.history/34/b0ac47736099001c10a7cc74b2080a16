@@ -1,0 +1,11 @@
+Feature: adactin login Functionlity
+
+Scenario: Verification of Login Function  
+Given user on the Login Page
+When user enters login id with "kameshpoorni"
+When user enters password with "1B958G"
+When user click login button
+Then user should see Search Hotal Page
+
+
+

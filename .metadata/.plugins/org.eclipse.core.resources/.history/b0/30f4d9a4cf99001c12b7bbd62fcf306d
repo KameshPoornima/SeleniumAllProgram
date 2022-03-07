@@ -1,0 +1,29 @@
+package com.Stepdefinition.adactin;
+
+import io.cucumber.java.en.Given;
+import io.cucumber.java.en.Then;
+import io.cucumber.java.en.When;
+
+public class FaceBookStepdifinition {
+	
+
+	@Given("User Launched The Broswer")
+	public void user_launched_the_broswer() {
+	}
+	@When("User Enters on URL")
+	public void user_enters_on_url() {
+	}
+	@When("User Enters on {string}")
+	public void user_enters_on(String string) {
+	}
+	@When("Click on Login Button")
+	public void click_on_login_button() {
+	}
+	@Then("if Verifies the Login Functionality")
+	public void if_verifies_the_login_functionality() {
+	}
+
+
+
+
+}

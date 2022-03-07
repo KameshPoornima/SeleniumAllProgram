@@ -1,0 +1,19 @@
+Feature: Adactin Hotal Booking
+
+Scenario: Adactin Hotal Login Functionality
+Given  Broswer Launched
+When UURl link opened
+When User Enters on "Kameshpoorni" in username field
+When User Enters on "1B958G" in password field
+And Click on Login button
+Then Verifies the login functionality is successfully logined
+And navigate to the Search Hotal page
+
+Scenario: Search Hotal Page Functionality
+Given  User enters on Details in Manidatory Field
+When User Select on location in location field
+When User Select on Hotals in Hotals Field
+When User Select on Room Type in Room Type Field
+When User select a Number of Rooms in NOR Field
+When User enters on check in date in Check in date Field
+When User enters on check out date in Check out date Field

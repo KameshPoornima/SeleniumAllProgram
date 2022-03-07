@@ -1,0 +1,18 @@
+package com.adactin.helper;
+
+import java.io.File;
+import java.io.FileInputStream;
+import java.io.FileNotFoundException;
+import java.util.Properties;
+
+public class ConfigurationReader {
+	public static Properties ps;
+	
+	public ConfigurationReader() throws FileNotFoundException {
+		File f =new File("src\\test\\java\\com\\adactinProperty\\org\\adactin.property");
+		FileInputStream fis = new FileInputStream(f);
+		ps = new Properties();
+		
+	}
+
+}

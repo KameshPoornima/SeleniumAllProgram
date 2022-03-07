@@ -1,0 +1,46 @@
+package com.Stepdefinition.adactin;
+
+import org.com.cucumber.Baseclass;
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.support.FindBy;
+
+import com.Runnerclass.adactin.Runnerclass;
+
+import io.cucumber.java.en.*;
+
+public class stepdefinition {
+	public static WebDriver driver;
+	
+
+	@Given("user on the Login Page")
+	public void user_on_the_login_page() {
+		System.out.println("Successful Login");
+		driver.get("https://adactinhotelapp.com/");
+	    throw new io.cucumber.java.PendingException();
+	}
+	@When("user enters login id with {string}")
+	public void user_enters_login_id_with(String string) {
+		driver.findElement(By.id("username")).sendKeys(string);
+	    throw new io.cucumber.java.PendingException();
+	}
+	@When("user enters password with {string}")
+	public void user_enters_password_with(String string) {
+		driver.findElement(By.id("password")).sendKeys(string);
+	    throw new io.cucumber.java.PendingException();
+	}
+	@When("user click login button")
+	public void user_click_login_button() {
+		driver.findElement(By.id("login")).click();
+	    throw new io.cucumber.java.PendingException();
+	}
+	@Then("user should see Search Hotal Page")
+	public void user_should_see_search_hotal_page() {
+		System.out.println("Search Hotal Page");
+	    throw new io.cucumber.java.PendingException();
+	}
+
+
+
+
+}

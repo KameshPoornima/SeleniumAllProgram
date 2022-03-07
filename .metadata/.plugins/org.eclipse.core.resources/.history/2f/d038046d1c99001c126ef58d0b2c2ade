@@ -1,0 +1,21 @@
+package com.adactin.helper;
+
+public class FileReaderManager {
+	
+	private FileReaderManager() {
+		
+	}
+	
+	public static FileReaderManager getInstance() {
+		FileReaderManager fir = new FileReaderManager();
+		return fir;
+	
+	}
+	
+	public ConfigurationReader getInstance() {
+		ConfigurationReader cr = new ConfigurationReader();
+		return cr;
+		
+	}
+
+}

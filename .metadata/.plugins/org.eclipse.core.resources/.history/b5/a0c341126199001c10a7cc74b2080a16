@@ -1,0 +1,97 @@
+package com.Stepdefinition.adactin;
+
+import org.com.cucumber.Baseclass;
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.firefox.FirefoxDriver;
+import org.openqa.selenium.support.FindBy;
+
+import com.Runnerclass.adactin.Runnerclass;
+
+import io.cucumber.java.en.*;
+
+public class stepdefinition {
+	public static WebDriver driver;
+	
+
+	@Given("user on the Login Page")
+	public void user_on_the_login_page() {
+		System.out.println("Successful Login");
+		driver = new FirefoxDriver();
+		driver.get("https://adactinhotelapp.com/");
+	}
+	@When("user enters login id with {string}")
+	public void user_enters_login_id_with(String string) {
+		driver.findElement(By.id("username")).sendKeys(string);
+	}
+	@When("user enters password with {string}")
+	public void user_enters_password_with(String string) {
+		driver.findElement(By.id("password")).sendKeys(string);
+	}
+	@When("user click login button")
+	public void user_click_login_button() {
+		driver.findElement(By.id("login")).click();
+	}
+	@Then("user should see Search Hotal Page")
+	public void user_should_see_search_hotal_page() {
+		System.out.println("Search Hotal Page");
+	}
+	
+	
+	
+
+	@Given("User enters on Details in Manidatory Field")
+	public void user_enters_on_details_in_manidatory_field() {
+	}
+	
+	@When("User Select a location in location field")
+	public void user_select_a_location_in_location_field() {
+	}
+	
+	@When("User Select a Hotals in Hotals Field")
+	public void user_select_a_hotals_in_hotals_field() {
+	}
+	
+	@When("User Select a Room Type in Room Type Field")
+	public void user_select_a_room_type_in_room_type_field() {
+	}
+	
+	@When("User select a Number of Rooms in NOR Field")
+	public void user_select_a_number_of_rooms_in_nor_field() {
+	}
+	
+	@When("User enters on check in date in Check in date Field")
+	public void user_enters_on_check_in_date_in_check_in_date_field() {
+	}
+	
+	@When("User enters on check out date in Check out date Field")
+	public void user_enters_on_check_out_date_in_check_out_date_field() {
+	}
+	
+	@When("User Select a Adults per Room in Adults per Room Field")
+	public void user_select_a_adults_per_room_in_adults_per_room_field() {
+	}
+	
+	@When("User Select a Children per Room in Children per Room Field")
+	public void user_select_a_children_per_room_in_children_per_room_field() {
+	}
+	
+	@When("if any issues Click on Reset button or if ok click on search button")
+	public void if_any_issues_click_on_reset_button_or_if_ok_click_on_search_button() {
+	}
+	
+	@Then("If verifes The Search Hotal Page an move to next page is successful")
+	public void if_verifes_the_search_hotal_page_an_move_to_next_page_is_successful() {
+	}
+	
+	@Then("navigate to the Select Hotal  page")
+	public void navigate_to_the_select_hotal_page() {
+	}
+
+
+
+
+
+
+
+}

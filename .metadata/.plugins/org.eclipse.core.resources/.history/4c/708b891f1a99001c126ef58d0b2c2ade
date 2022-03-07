@@ -1,0 +1,13 @@
+package com.adactin.helper;
+
+import java.io.File;
+import java.util.Properties;
+
+public class ConfigurationReader {
+	public static Properties ps;
+	
+	public ConfigurationReader() {
+		File f =new File("src\\test\\java\\com\\adactinProperty\\org\\adactin.property");
+	}
+
+}
